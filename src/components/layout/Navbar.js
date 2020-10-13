@@ -69,15 +69,19 @@ const StyledNavbar = styled.div`
         grid-template-columns: repeat(3, 1fr);
         overflow: hidden;
         z-index: 100;
+        border: 1px solid var(--light-outline);
         a{
             text-align: center;
-            padding: 13px 0;
-            color: var(--white);
-            font-size: var(--fz-xl);
-            background-color: var(--dark-color);
+            padding: 10px 0;
+            color: gray;
+            font-size: var(--fz-xxl);
+            background-color: var(--white);
+            border-right: 1px solid var(--light-outline); 
             &.selected{
-                background-color: #f2f2f2;
                 color: var(--black);
+            }
+            &:last-child{
+                border-right: none;
             }
         }
         @media (max-width: 660px){
