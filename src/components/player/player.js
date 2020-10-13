@@ -11,6 +11,7 @@ const StyledPlayer = styled.div`
         flex-direction: column;
         align-items: center;
         color: (--black);
+        padding: 0 10px;
         .logo{
             max-width: 200px;
             margin: 0 0 30px 0;
@@ -64,6 +65,7 @@ const StyledRightSide = styled.div`
             margin: 10px 0;
             p{
                 margin: 15px 0;
+                text-align: center;
             }
         }
     }
