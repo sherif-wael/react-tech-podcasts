@@ -90,6 +90,9 @@ const StyledControls = styled.div`
     &.full-page{
         flex-wrap: wrap;
         justify-content: center;
+        i{
+            font-size: var(--fz-xl);
+        }
         span{
             flex-basis: 100%;
             text-align: center;
