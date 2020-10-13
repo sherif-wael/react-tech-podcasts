@@ -83,7 +83,7 @@ const StyledNavbar = styled.div`
         }
     }
     @media (max-width: 660px){
-        padding: 15px 20px;
+        padding: 15px 10px;
     }
 `
 
