@@ -6,6 +6,7 @@ import EpisodeGrid from "./episodes-grid";
 
 const StyledContainer = styled.div`
     margin: 0 0 70px;
+    padding: 0 10px;
 `
 
 
@@ -17,7 +18,7 @@ export default function Episodes({episodes}){
     }
     let data = !value ? episodes : episodes.filter(filterEpisods);
     return (
-        <StyledContainer className="small-side-paddings">
+        <StyledContainer>
             <SearchEpisodes value={value} onChange={(v) => setValue(v)} />
             <EpisodeGrid data={data} />
         </StyledContainer>
