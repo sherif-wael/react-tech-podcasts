@@ -61,8 +61,8 @@ const StyledNavbar = styled.div`
         }
         img{
             position: absolute;
-            right: -20%;
-            bottom: -15%;
+            right: -30%;
+            bottom: -18%;
             height: 100%;
         }
         @media (max-width: 660px){
@@ -128,12 +128,7 @@ const opts = {
     paused: true,
     defaults: {
         duration: 0.3
-    },
-    onStart: () => {
-        document.body.classList.add("hidden")
-        document.documentElement.scrollTop = 0;
-    },
-    onReverseComplete: () => document.body.classList.remove("hidden")
+    }
 }
 
 export default function Navbar(){
