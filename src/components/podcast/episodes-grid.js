@@ -65,7 +65,6 @@ const StyledEpisode = styled.div`
             color: var(--black);
         }
         .date{
-            margin: 0 0 5px;
             color: gray;
             display: flex;
             align-items: center;
