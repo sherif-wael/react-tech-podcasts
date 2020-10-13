@@ -5,8 +5,7 @@ import bg from "../../images/triangle-bg2.png";
 const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 10px;
     color: var(--white);
     background: linear-gradient(90deg, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)), url(${bg}) no-repeat center;
     margin: 0 0 60px 0;
@@ -65,7 +64,7 @@ const StyledContainer = styled.div`
 export default function PodcastHeader({data}){
     let {title, author, description, image, updated, episodes, link} = data ;
     return (
-        <StyledContainer className="side-paddings">
+        <StyledContainer>
             <div className="logo">
                 <img src={image} alt={title} />
             </div>
