@@ -72,7 +72,7 @@ const StyledNavbar = styled.div`
         box-shadow: 0 -1px 1px rgb(0, 0, 0, 0.2);
         a{
             text-align: center;
-            padding: 10px 0;
+            padding: 12px 0;
             color: var(--white);
             font-size: var(--fz-xl);
             background-color: var(--dark-color);
