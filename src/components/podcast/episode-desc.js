@@ -48,9 +48,8 @@ const StyledDesc = styled.div`
     max-height: 400px;
     overflow: auto;
     &::-webkit-scrollbar {
-        width: 12px;
+        width: 10px;
     }
-    
     &::-webkit-scrollbar-track {
         background-color: transparent;
     }
@@ -73,7 +72,7 @@ export default function EpisodeDescription({episode, close}){
     }, [])
     return (
         <StyledContainer>
-            <CSSTransition in={state} timeout={300} onExited={close} classNames="fade" unmountOnExit>
+            <CSSTransition in={state} timeout={200} onExited={close} classNames="fade" unmountOnExit>
                     <div className="wrapper">
                         <StyledHeader>
                             <h3>{episode.title}</h3>

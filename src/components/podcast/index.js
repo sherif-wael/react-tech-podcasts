@@ -8,7 +8,6 @@ import ErrorMessage from "./error";
 import PodcastHeader from "./header";
 import Episodes from "./episodes";
 import Layout from "../layout/layout";
-import {LoadingLayout} from "../common";
 
 function PodcastPage({history, match, podcasts, error, addPodcast}){
     let podcastName = decode(match.params.name);

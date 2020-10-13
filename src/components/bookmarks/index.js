@@ -3,27 +3,12 @@ import styled from "styled-components";
 import {connect} from "react-redux";
 import Bookmark from "./bookmark";
 import {deleteBookmark, setPlayingEpisode} from "../../actions/index";
-import {BackArrow} from "../common";
+import Layout from "../layout/layout";
 
-
-const StyledHeader = styled.div`
-    display: flex;
-    background-color: var(--dark-color);
-    color: var(--black);
-    padding: 18px 20px;
-    position: sticky;
-    top: 0;
-    i{
-        font-size: var(--fz-xl);
-        cursor: pointer;
-        margin-left: auto;
-        color: var(--white);
-    }
-`
 
 const StyledTitle = styled.div`
     padding: 0 15px;
-    margin: 60px 0 20px;
+    margin: 65px 0 20px;
     text-align: center;
     font-size: var(--fz-heading);
     h2{
@@ -31,8 +16,8 @@ const StyledTitle = styled.div`
         letter-spacing: 0.8px;
     }
     @media (${({theme}) => theme.bp.xs}){
-        font-size: 26px;
-        margin: 40px 0 15px;
+        font-size: 24px;
+        margin: 60px 0 15px;
     }
 `
 
@@ -46,6 +31,7 @@ const StyledBookmarks = styled.div`
     @media (${({theme}) => theme.bp.sm}){
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px 10px;
+        margin: 0 auto 50px;
     }
     @media (${({theme}) => theme.bp.xs}){
         grid-template-columns: 1fr;
@@ -55,10 +41,7 @@ const StyledBookmarks = styled.div`
 
 function Bookmarks({bookmarks, deleteBookmark, setPlayingEpisode, playingEpisode}){
     return (
-        <div>
-            <StyledHeader className="small-side-paddings">
-                <BackArrow />
-            </StyledHeader>
+        <Layout goBack={true}>
             <StyledTitle>
                 <h2>Your Bookmarks!</h2>
             </StyledTitle>
@@ -72,7 +55,7 @@ function Bookmarks({bookmarks, deleteBookmark, setPlayingEpisode, playingEpisode
                     }
                 </StyledBookmarks>
             </div>
-        </div>
+        </Layout>
     )
 }
 

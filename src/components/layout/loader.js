@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from "react";
 import gsap from "../../lib/gsap";
 import styled from "styled-components";
-import { LoadingLayout } from "../common";
+import Layout from "./layout";
 
 
 
@@ -22,7 +22,7 @@ export default function Loader(){
         gsap.from(left.current, {opacity: 0, stagger: 0.2, ease: "Power1.easeOut", repeat: -1, duration: 0.2})
     }, [])
     return (
-        <LoadingLayout>
+        <Layout goBack={true} expand={true}>
             <StyledLoader>
                 <svg id="Layer_1" enableBackground="new 0 0 256 256"  viewBox="0 0 256 200" xmlns="http://www.w3.org/2000/svg">
                     <path d="m173.274 97.657h-90.548c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5h90.549c1.933 0 3.5 1.567 3.5 3.5s-1.568 3.5-3.501 3.5z" fill="#3762cc"/>
@@ -54,6 +54,6 @@ export default function Loader(){
                     </g>
                 </svg>
             </StyledLoader>
-        </LoadingLayout>
+        </Layout>
     )
 }

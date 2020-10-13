@@ -5,7 +5,7 @@ import bg from "../../images/triangle-bg2.png";
 const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 90px 10px;
+    padding: 85px 10px;
     color: var(--white);
     background: linear-gradient(90deg, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)), url(${bg}) no-repeat center;
     margin: 0 0 60px 0;
@@ -55,8 +55,7 @@ const StyledContainer = styled.div`
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.98), rgb(0, 0, 0, 0.4) 60%, transparent), url(${bg}) no-repeat center;
-
+        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)), url(${bg}) no-repeat center;
     }
 `
 

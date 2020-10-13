@@ -1,12 +1,28 @@
 import React from "react";
 import Navbar from "./Navbar";
+import styled from "styled-components";
+import classNames from "classnames"
 
+const StyledContainer = styled.div`
+    &.expand{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        .wrapper{
+            flex-grow: 1;
+            ${({theme}) => theme.mixins.flexCenter};
+            padding: 10px;
+        }
+    }
+`
 
-export default function Layout({children}){
+export default function Layout({children, goBack, expand}){
     return (
-        <div>
-            <Navbar />
-            {children}
-        </div>
+        <StyledContainer className={classNames({expand: expand})}>
+            <Navbar goBack={goBack} />
+            <div className="wrapper">
+                {children}
+            </div>
+        </StyledContainer>
     )
 }

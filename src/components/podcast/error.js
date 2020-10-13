@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {LoadingLayout} from "../common";
+import Layout from "../layout/layout";
 
 const StyledContainer = styled.div`
     p{
@@ -12,10 +12,10 @@ const StyledContainer = styled.div`
 
 export default function ErrorMessage({message}){
     return (
-        <LoadingLayout>
+        <Layout goBack={true} expand={true}>
             <StyledContainer>
                 <p>{message}</p>
             </StyledContainer>
-        </LoadingLayout>
+        </Layout>
     )
 }

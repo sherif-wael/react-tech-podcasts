@@ -16,6 +16,9 @@ const StyledSection = styled.section`
             margin: 0 0 40px;
         }
     }
+    @media (max-width: 660px){
+        margin: 0 0 65px;
+    }
 `
 
 const StyledGrid = styled.div`

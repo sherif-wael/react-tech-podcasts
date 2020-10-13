@@ -8,15 +8,15 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     .header{
-        padding: 14px 16px;
-        background-color: var(--dark-color);
+        padding: 12px 20px;
+        background-color: var(--light-color);
         position: sticky;
         top: 0;
         display: flex;
         i{
-            color: Var(--white);
+            color: Var(--black);
             margin-left: auto;
-            font-size: var(--fz-lg);
+            font-size: var(--fz-xxl);
             cursor: pointer;
             padding: 6px;
         }

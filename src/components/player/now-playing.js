@@ -1,6 +1,6 @@
 import React from "react";
 import Player from "./player";
-import {LoadingLayout} from "../common";
+import Layout from "../layout/layout";
 import {connect} from "react-redux";
 import ErrorMessage from "../podcast/error"
 
@@ -11,9 +11,9 @@ function NowPlaying({episode}){
         )
     }
     return (
-        <LoadingLayout>
+        <Layout goBack={true} expand={true}>
             <Player className="full-page" sound={false} />
-        </LoadingLayout>
+        </Layout>
     )
 }
 

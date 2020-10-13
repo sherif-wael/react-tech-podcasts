@@ -10,8 +10,8 @@ const transition = css`
     .fade-enter-active{
         transform: scale(1);
         opacity: 1;
-        transition: transform 300ms linear,
-        opacity 300ms linear;
+        transition: transform 200ms linear,
+        opacity 200ms linear;
     }
     .fade-exit{
         transform: scale(1);
@@ -20,8 +20,8 @@ const transition = css`
     .fade-exit-active{
         transform: scale(0);
         opacity: 0;
-        transition: transform 300ms linear,
-                    opacity 300ms linear;
+        transition: transform 200ms linear,
+                    opacity 200ms linear;
     }
 `
 
