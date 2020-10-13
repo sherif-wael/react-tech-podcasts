@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     .header{
-        padding: 18px 20px;
+        padding: 14px 16px;
         background-color: var(--dark-color);
         position: sticky;
         top: 0;
@@ -18,6 +18,7 @@ const StyledContainer = styled.div`
             margin-left: auto;
             font-size: var(--fz-lg);
             cursor: pointer;
+            padding: 6px;
         }
     }
     .loader{

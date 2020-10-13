@@ -127,7 +127,7 @@ const smallNavLinks = [
 const opts = {
     paused: true,
     defaults: {
-        duration: 0.3
+        duration: 0.2
     }
 }
 
@@ -142,13 +142,13 @@ export default function Navbar(){
         let [bar1, bar2, bar3] = bars.current;
         tl
             .to(bar2, {scaleX: 0, transformOrigin: "right"}, 0)
-            .to(bar1, {y: 6}, 0.3)
-            .to(bar3, {y: -6}, 0.3)
-            .to(bar1, {rotate: 45}, 0.4)
-            .to(bar3, {rotate: -45}, 0.4)
+            .to(bar1, {y: 6}, 0.2)
+            .to(bar3, {y: -6}, 0.2)
+            .to(bar1, {rotate: 45}, 0.3)
+            .to(bar3, {rotate: -45}, 0.3)
             .to(nav.current, {xPercent: 100}, 0.3)
-            .from(links.current, {y: -25, opacity: 0, stagger: 0.2}, "+=0.2")
-            .from(img.current, {x: 100, opacity: 0}, 0.6)
+            .from(links.current, {y: -25, opacity: 0, stagger: 0.2}, 0.4)
+            .from(img.current, {x: 100, opacity: 0}, 0.5)
             
     }, [])
     useEffect(() => {
