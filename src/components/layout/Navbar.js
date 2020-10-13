@@ -12,6 +12,9 @@ const StyledNavbar = styled.div`
     &.darker{
         background-color: var(--light-color);
         padding: 15px 30px;
+        @media (max-width: 660px){
+            padding: 15px 10px 15px 12px;
+        }
         .logo{
             font-size: var(--fz-xl);
         }
