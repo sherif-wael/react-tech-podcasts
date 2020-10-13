@@ -11,9 +11,9 @@ const StyledNavbar = styled.div`
     padding: 22px 30px;
     &.darker{
         background-color: var(--light-color);
-        padding: 16px 30px;
+        padding: 15px 30px;
         @media (max-width: 660px){
-            padding: 16px 10px 16px 12px;
+            padding: 15px 10px 15px 12px;
         }
         .logo{
             font-size: var(--fz-xl);
@@ -72,9 +72,9 @@ const StyledNavbar = styled.div`
         box-shadow: 0 -1px 1px rgb(0, 0, 0, 0.2);
         a{
             text-align: center;
-            padding: 15px 0;
+            padding: 10px 0;
             color: var(--white);
-            font-size: var(--fz-xxl);
+            font-size: var(--fz-xl);
             background-color: var(--dark-color);
             &.selected{
                 background-color: #f2f2f2;
