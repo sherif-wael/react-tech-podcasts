@@ -41,7 +41,7 @@ const StyledContainer = styled.div`
         }
         @media (${({theme}) => theme.bp.xs}){
             p, h2{
-                margin: 0 0 10px;
+                margin: 0 0 15px;
             }
             h2{
                 font-size: 28px;
