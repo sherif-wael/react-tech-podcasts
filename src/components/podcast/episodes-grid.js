@@ -63,8 +63,10 @@ const StyledEpisode = styled.div`
             font-size: var(--fz-md);
             font-weight: 400;
             color: var(--black);
+            padding: 2px 0;
         }
         .date{
+            margin: 0 0 6px;;
             color: gray;
             display: flex;
             align-items: center;
