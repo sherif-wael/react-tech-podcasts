@@ -69,10 +69,9 @@ const StyledNavbar = styled.div`
         grid-template-columns: repeat(3, 1fr);
         overflow: hidden;
         z-index: 100;
-        box-shadow: 0 -1px 1px rgb(0, 0, 0, 0.2);
         a{
             text-align: center;
-            padding: 12px 0;
+            padding: 13px 0;
             color: var(--white);
             font-size: var(--fz-xl);
             background-color: var(--dark-color);

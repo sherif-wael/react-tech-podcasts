@@ -55,7 +55,7 @@ const StyledContainer = styled.div`
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)), url(${bg}) no-repeat center;
+        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.5) 100%), url(${bg}) no-repeat center;
     }
 `
 
