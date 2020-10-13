@@ -43,7 +43,7 @@ const StyledEpisode = styled.div`
             margin: 0 0 0 3px;
             color: rgb(0, 0, 0, 0.4);
             transiton: color 300ms ease;
-            &.fa-pause{
+            &.fa-stop{
                 margin: 0;
             }
         }

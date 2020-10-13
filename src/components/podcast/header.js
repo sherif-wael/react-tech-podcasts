@@ -5,7 +5,8 @@ import bg from "../../images/triangle-bg2.png";
 const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
     color: var(--white);
     background: linear-gradient(90deg, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.3)), url(${bg}) no-repeat center;
     margin: 0 0 60px 0;
