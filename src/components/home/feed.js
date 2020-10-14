@@ -37,7 +37,7 @@ const StyledGrid = styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px 10px
     }
-    @media (max-width: 400px){
+    @media (max-width: 355px){
         grid-template-columns: repeat(2, 1fr);
     }
 `
@@ -77,7 +77,7 @@ function FeedContainer({history}){
     }, [])
     return (
         <StyledSection>
-            <div className="side-paddings">
+            <div className="small-side-paddings">
                 <h3>Available Podcasts</h3>
                 <StyledGrid ref={wrapper}>
                     {
@@ -86,7 +86,7 @@ function FeedContainer({history}){
                                 onClick={() => history.push(`/podcast/${encode(name)}`)}>
                                 <figure>
                                     <img src={img} alt={name} />
-                                    <figcaption>{maxLength(name, 15)}</figcaption>
+                                    <figcaption>{maxLength(name, 10)}</figcaption>
                                 </figure>
                             </StyledPodcastIcon>
                         ))
