@@ -76,7 +76,7 @@ const StyledNavbar = styled.div`
             color: gray;
             font-size: var(--fz-xxl);
             background-color: var(--white);
-            border-right: 1px solid var(--light-outline); 
+            // border-right: 1px solid var(--light-outline); 
             &.selected{
                 color: var(--black);
             }
