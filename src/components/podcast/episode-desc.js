@@ -40,6 +40,7 @@ const StyledHeader = styled.div`
     i{
         font-size: var(--fz-lg);
         cursor: pointer;
+        padding: 5px;
     }
 `
 

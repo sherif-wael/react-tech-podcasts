@@ -94,6 +94,7 @@ const StyledControls = styled.div`
         justify-content: center;
         i{
             font-size: var(--fz-xl);
+            padding: 2px;
         }
         span{
             flex-basis: 100%;
