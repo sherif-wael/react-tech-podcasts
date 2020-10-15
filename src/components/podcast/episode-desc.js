@@ -59,28 +59,26 @@ const StyledDesc = styled.div`
         border-radius: 5px;
         background-color: rgb(255, 255, 255, 0.2);
     }
-    p{
-        font-weight: 300;
-        line-height: 1.4;
-        margin: 0;
-    }
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 2px;
 `
 
 export default function EpisodeDescription({episode, close}){
-    let [state, setState] = useState(false);
-    useEffect(() => {
-        setState(true)
-    }, [])
+    let [state, setState] = useState(true);
+    // useEffect(() => {
+    //     setState(true)
+    // }, [])
     return (
         <StyledContainer>
-            <CSSTransition in={state} timeout={200} onExited={close} classNames="fade" unmountOnExit>
+            <CSSTransition in={state} timeout={200} onExited={close} classNames="fade" unmountOnExit appear>
                     <div className="wrapper">
                         <StyledHeader>
                             <h3>{episode.title}</h3>
                             <i className="fas fa-times-circle" onClick={() => setState(false)}></i>
                         </StyledHeader>
                         <StyledDesc>
-                            <p>{episode.description}</p>
+                            <div dangerouslySetInnerHTML={{__html: episode.description}}></div>
                         </StyledDesc>
                     </div>
             </CSSTransition>

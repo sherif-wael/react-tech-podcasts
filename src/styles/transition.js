@@ -3,6 +3,16 @@ import {css} from "styled-components";
 
 
 const transition = css`
+    .fade-appear{
+        transform: scale(0);
+        opacity: 0;
+    }
+    .fade-appear-active{
+        transform: scale(1);
+        opacity: 1;
+        transition: transform 200ms linear,
+                    opacity 200ms linear;
+    }
     .fade-enter{
         transform: scale(0);
         opacity: 0;
@@ -11,7 +21,7 @@ const transition = css`
         transform: scale(1);
         opacity: 1;
         transition: transform 200ms linear,
-        opacity 200ms linear;
+                    opacity 200ms linear;
     }
     .fade-exit{
         transform: scale(1);

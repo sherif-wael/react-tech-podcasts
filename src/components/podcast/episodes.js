@@ -5,8 +5,11 @@ import EpisodeGrid from "./episodes-grid";
 
 
 const StyledContainer = styled.div`
-    margin: 0 0 70px;
+    margin: 0 0 85px;
     padding: 0 10px;
+    @media(max-width: 660px){
+        margin: 0 0 70px;
+    }
 `
 
 

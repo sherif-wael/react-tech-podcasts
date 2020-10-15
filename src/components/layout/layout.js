@@ -6,6 +6,9 @@ import classNames from "classnames"
 const StyledContainer = styled.div`
     &.expand{
         min-height: 100vh;
+        @media (max-width: 660px){
+            min-height: calc(100vh - 25px);
+        }
         display: flex;
         flex-direction: column;
         .wrapper{
